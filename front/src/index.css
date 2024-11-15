@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Grid container styling */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* Create 10 equal columns */
+  grid-template-rows: repeat(10, 1fr); /* Create 10 equal rows */
+  gap: 1px; /* Space between grid items */
+  width: 500px; /* Width of the grid container */
+  height: 500px; /* Height of the grid container */
+  margin: 0 auto; /* Center the grid on the page */
+  border: 2px solid #000; /* Border around the entire grid */
+}
+
+/* Individual grid cell styling */
+.grid-item {
+  background-color: lightgray; /* Default background */
+  border: 1px solid #ccc; /* Border around each grid square */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect to make squares interactive */
+
+
+/* Blocked cell styling */
+.blocked {
+  background-color: #ff6f61; /* Red background for blocked cells */
+}
+.path
+{
+  background-color: green;
+}
+
+/* Main container styling */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 35px;
+}
+
+/* Button styling */
+.bt {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 16px; /* Font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease;
+}
+
+.bt:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
